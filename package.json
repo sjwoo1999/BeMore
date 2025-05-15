@@ -52,10 +52,12 @@
   },
   "workspaces": [
     "packages/*",
-    "apps",
-    "apps/*",
     "libs/*",
-    "libs"
+    "libs",
+    "apps/*",
+    "apps",
+    "apps-e2e/*",
+    "apps-e2e"
   ],
   "dependencies": {
     "next": "~15.2.4",

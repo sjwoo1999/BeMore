@@ -11,6 +11,12 @@
     },
     {
       "path": "./libs"
+    },
+    {
+      "path": "./apps"
+    },
+    {
+      "path": "./apps-e2e"
     }
   ]
 }
