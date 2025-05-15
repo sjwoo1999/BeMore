@@ -1,10 +1,8 @@
-// apps/src/app/emotion/input/components/InputForm.tsx
-
 'use client';
 
-import { useEmotionStore } from '@/app/stores/emotionStore';
+import { useEmotionStore } from '../../../stores/emotionStore';
 
-export const InputForm = () => {
+const InputForm = () => {
   const { inputText, updateText } = useEmotionStore();
 
   return (
@@ -20,3 +18,5 @@ export const InputForm = () => {
     </div>
   );
 };
+
+export default InputForm;

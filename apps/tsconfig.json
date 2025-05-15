@@ -33,7 +33,13 @@
     ],
     "outDir": "dist",
     "rootDir": "src",
-    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo"
+    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@app/*": ["./src/app/*"],
+      "@libs/*": ["../../libs/src/*"]
+    }
   },
   "include": [
     "../apps/.next/types/**/*.ts",
