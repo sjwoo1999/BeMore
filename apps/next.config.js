@@ -9,7 +9,7 @@ const nextConfig = {
   webpack: (config) => {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
-      '@app': path.resolve(__dirname, 'src/app'), // ✅ 여기 핵심
+      '@app': path.resolve(__dirname, 'src/app'),
     };
     return config;
   },

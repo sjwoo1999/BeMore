@@ -9,7 +9,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import { useEmotionStore } from '@app/stores/emotionStore';
+import { useEmotionStore } from '../../../stores/emotionStore';
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Tooltip, Legend);
 

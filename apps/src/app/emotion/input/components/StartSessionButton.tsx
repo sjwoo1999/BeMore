@@ -1,6 +1,6 @@
 'use client';
 
-import { useEmotionStore } from '@app/stores/emotionStore';
+import { useEmotionStore } from '../../../stores/emotionStore';
 
 export default function StartSessionButton() {
   const { inputText } = useEmotionStore();
