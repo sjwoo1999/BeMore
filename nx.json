@@ -82,5 +82,11 @@
         "linter": "eslint"
       }
     }
+  },
+  "projects": {
+    "@be-more/apps": {
+      "root": "apps",
+      "tags": []
+    }
   }
 }

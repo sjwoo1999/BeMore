@@ -9,6 +9,7 @@
     "@eslint/eslintrc": "^2.1.1",
     "@eslint/js": "^9.8.0",
     "@next/eslint-plugin-next": "^15.2.4",
+    "@nrwl/next": "^19.8.4",
     "@nx/devkit": "21.0.3",
     "@nx/eslint": "21.0.3",
     "@nx/eslint-plugin": "21.0.3",
@@ -66,5 +67,30 @@
     "react-chartjs-2": "^5.3.0",
     "react-dom": "19.0.0",
     "zustand": "^5.0.4"
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "executor": "@nx/next:build",
+        "options": {
+          "outputPath": "dist/apps",
+          "root": "apps",
+          "config": "apps/next.config.js"
+        }
+      },
+      "dev": {
+        "executor": "@nx/next:dev-server",
+        "options": {
+          "buildTarget": "@be-more/apps:build"
+        }
+      },
+      "serve": {
+        "executor": "@nx/next:server",
+        "options": {
+          "buildTarget": "@be-more/apps:build",
+          "dev": true
+        }
+      }
+    }
   }
 }

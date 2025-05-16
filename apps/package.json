@@ -6,5 +6,30 @@
     "next": "~15.2.4",
     "react": "19.0.0",
     "react-dom": "19.0.0"
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "executor": "@nrwl/next:build",
+        "options": {
+          "root": "apps",
+          "outputPath": "dist/apps",
+          "config": "apps/next.config.js"
+        }
+      },
+      "serve": {
+        "executor": "@nrwl/next:server",
+        "options": {
+          "buildTarget": "@be-more/apps:build",
+          "dev": true
+        },
+        "configurations": {
+          "production": {
+            "buildTarget": "@be-more/apps:build:production",
+            "dev": false
+          }
+        }
+      }
+    }
   }
 }
